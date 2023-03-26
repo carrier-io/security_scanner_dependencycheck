@@ -40,8 +40,8 @@ class Module(module.ModuleModel):
 
         self.context.rpc_manager.call.integrations_register_section(
             name=SECTION_NAME,
-            integration_description='Manage integrations with code scanners',
-            test_planner_description='Specify code scanners to use. You may also set code scanners in <a '
+            integration_description='Manage integrations with dependency scanners',
+            test_planner_description='Specify dependency scanners to use. You may also set dependency scanners in <a '
                                      'href="{}">Integrations</a> '.format('/-/configuration/integrations/')
         )
 
