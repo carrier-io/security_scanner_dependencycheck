@@ -16,12 +16,6 @@
 #   limitations under the License.
 
 """ Module """
-import functools
-from pathlib import Path
-
-import flask  # pylint: disable=E0401
-import jinja2  # pylint: disable=E0401
-from flask import request, render_template, redirect, url_for
 from pylon.core.tools import log  # pylint: disable=E0611,E0401
 from pylon.core.tools import module  # pylint: disable=E0611,E0401
 
@@ -40,7 +34,7 @@ class Module(module.ModuleModel):
         """ Init module """
         log.info("Initializing module")
 
-        SECTION_NAME = 'code_scanners'
+        SECTION_NAME = 'dependency_scanners'
 
         self.descriptor.init_blueprint()
 
