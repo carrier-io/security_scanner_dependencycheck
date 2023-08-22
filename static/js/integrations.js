@@ -23,7 +23,7 @@ const dependencycheckIntegration = {
         <template #body>
             <div class="form-group">
 
-                <h9>Save intermediates to</h9>
+                <!--<h9>Save intermediates to</h9>
                 <p>
                     <h13>Optional</h13>
                 </p>
@@ -31,7 +31,7 @@ const dependencycheckIntegration = {
                        placeholder=""
                        v-model="save_intermediates_to"
                        :class="{ 'is-invalid': error.save_intermediates_to }">
-                <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>
+                <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>-->
 
                 <h9>Additional options</h9>
                 <p>
