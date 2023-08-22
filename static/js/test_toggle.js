@@ -8,7 +8,7 @@ const dependencycheckIntegration = {
     computed: {
         body_data() {
             const {
-                description,
+                config,
                 is_default,
                 selected_integration: id,
                 save_intermediates_to,
@@ -16,7 +16,7 @@ const dependencycheckIntegration = {
                 comp_opts,
             } = this
             return {
-                description,
+                config,
                 is_default,
                 id,
                 save_intermediates_to,
@@ -63,6 +63,7 @@ const dependencycheckIntegration = {
 
         initialState: () => ({
             // toggle: false,
+            config: {},
             error: {},
             save_intermediates_to: '/data/intermediates/sast',
             comp_path: '/tmp/code',
@@ -100,7 +101,7 @@ const dependencycheckIntegration = {
                         v-model="comp_opts"
                         :class="{ 'is-invalid': error.scan_opts }">
                     <div class="invalid-feedback">[[ error.scan_opts ]]</div>
-            
+
                     <h9>Path to code for analysis</h9>
                     <p>
                         <h13>Optional</h13>
@@ -118,4 +119,3 @@ const dependencycheckIntegration = {
 
 
 register_component('scanner-dependencycheck', dependencycheckIntegration)
-
