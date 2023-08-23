@@ -85,7 +85,7 @@ const dependencycheckIntegration = {
                 config,
                 is_default,
                 project_id,
-                save_intermediates_to,
+                // save_intermediates_to,
                 comp_path,
                 comp_opts,
                 status,
@@ -94,7 +94,7 @@ const dependencycheckIntegration = {
                 config,
                 is_default,
                 project_id,
-                save_intermediates_to,
+                // save_intermediates_to,
                 comp_path,
                 comp_opts,
                 status,
@@ -225,7 +225,7 @@ const dependencycheckIntegration = {
             test_connection_status: 0,
             id: null,
 
-            save_intermediates_to: '/data/intermediates/sast',
+            // save_intermediates_to: '/data/intermediates/sast',
             comp_path: '/tmp/code',
             comp_opts: "",
 
